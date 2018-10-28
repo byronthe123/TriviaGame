@@ -48,6 +48,10 @@ li:hover{
   padding-bottom: 20px;
 }
 
+.gif {
+  padding-bottom: 10px;
+}
+
 /*Below: Vertical Align Solution used from:
 https://stackoverflow.com/questions/22196587/how-to-center-align-vertically-the-container-in-bootstrap
 The Flexible box way by Hashem Qolami */

@@ -30,6 +30,7 @@ class game {
     this.current_qst_ans = this.qst_ans_array[random];
     this.qst_ans_array.splice(random, 1);
     this.allow_input = true;
+    $('#div_gif').empty();
     return this.current_qst_ans;
   }
 
@@ -41,6 +42,7 @@ class game {
   reset_timer(){
     clearInterval(this.interval_timer);
     this.timer_count = 11;
+    // $('#div_gif').empty();
     this.run_timer();
   }
 
@@ -124,8 +126,8 @@ class game {
 
         li_items.eq(i).addClass('li_correct');
 
-        //Append iimage at the wrong time:
-        // this.getAJAXImage(that.current_qst_ans.topic);
+        //Gif displays at the correct time:
+        this.getAJAXImage(that.current_qst_ans.topic);
 
       }
       if(input !== null) {
@@ -151,7 +153,7 @@ class game {
       // let $img = $(`<img src='${response.data.fixed_height.url}'>`);
       console.log(response.data[0].images.fixed_height.url);
       let img_src = response.data[0].images.fixed_height.url;
-      $('#div_gif').html($(`<img class='center-block' src='${response.data[0].images.fixed_height.url}'>`));
+      $('#div_gif').append($(`<img class='center-block gif' src='${response.data[0].images.fixed_height.url}'>`));
     });
   }
 
