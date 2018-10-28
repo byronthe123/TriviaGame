@@ -46,13 +46,11 @@ class game {
 
   timer() {
     let that = this;
-    // console.log(`length = ${that.qst_ans_array.length}`);
     if(that.timer_count > 0) {
 
       if(that.next_question) {
         if(that.qst_ans_array.length > 0) {
           display(that.get_next_question());
-          // console.log(that.current_qst_ans);
         }
       }
 
