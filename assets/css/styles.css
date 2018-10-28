@@ -1,0 +1,78 @@
+body {
+  background-image: url('../images/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+li {
+  margin: 0;
+  padding: none;
+  list-style: none;
+  list-style-position: inside;
+  border: orange 1px solid;
+}
+
+li:hover{
+  background-color: rgb(153, 213, 248);
+  font-size: 150%;
+}
+
+.li_correct {
+  font-size: 200%;
+  font-weight: bold;
+  background-color: rgb(165, 247, 165);
+}
+
+.li_incorrect {
+  background-color: red;
+}
+
+.title {
+  font-family: 'Diplomata', cursive;
+  text-shadow: orange 2px 2px;
+}
+
+* {
+  font-family: 'Yeseva One', cursive;
+}
+
+#ul_options {
+  padding-left: 0px;
+}
+
+#div_game_over {
+  padding-bottom: 20px;
+}
+
+/*Below: Vertical Align Solution used from:
+https://stackoverflow.com/questions/22196587/how-to-center-align-vertically-the-container-in-bootstrap
+The Flexible box way by Hashem Qolami */
+
+.vertical-center {
+  margin-bottom: 0;
+}
+
+.vertical-center {
+  min-height: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align : center;
+  -webkit-align-items : center;
+  -moz-box-align : center;
+  -ms-flex-align : center;
+  align-items : center;
+  width: 100%;
+  -webkit-box-pack : center;
+  -moz-box-pack : center;
+  -ms-flex-pack : center;
+  -webkit-justify-content : center;
+  justify-content : center;
+}
